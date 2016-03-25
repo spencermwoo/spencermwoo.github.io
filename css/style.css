@@ -21,11 +21,24 @@ h6 {
   height: auto;
 }
 
+.company {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 1.2em;
+  display: inline;
+}
+
+.date {
+  /*margin-left: */
+  text-align: right;
+  font-weight: lighter;
+  font-size: .9em;
+}
 /* animation stagger */
 h1 {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
-  font-size: 6em;
+  font-size: 5em;
   text-align: right;
   vertical-align: bottom;
   /*font-weight: bold;*/
@@ -35,7 +48,7 @@ h1 {
 h2 {
   -webkit-animation-delay: 2.3s;
   animation-delay: 2.3s;
-  font-size: 7em;
+  font-size: 6em;
   text-align: right;
   font-weight: bolder;
   /*display: inline;*/
@@ -62,8 +75,9 @@ h4 {
 }
 
 .body {
-  -webkit-animation-delay: 6.8s;
-  animation-delay: 6.8s;
+  /* 6.8 */
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   margin-top: 5em;
 }
 

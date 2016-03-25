@@ -40,7 +40,7 @@ function randomizeQuotes() {
 	"Order, unity, and continuity are human inventions just as truly as catalogues and encyclopedias.",
 	"Do not mistake my silence for apathy",*/
 	/*"All I want to do, ever, is think.",*/
-	"The black said to the white, 'If only you were grey I would be lenient with you.'",
+	"The black said to the white, 'If only you were grey I would be lenient with you.'"
 
 	/*"You know less than does a log on the ground",
 	"Caitlyn Jenner looks a lot like Bruce Jenner.",
