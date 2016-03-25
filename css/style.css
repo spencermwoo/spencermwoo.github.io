@@ -1,0 +1,89 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+}
+
+.third {
+  width: 100%;
+  height: auto;
+}
+
+/* animation stagger */
+h1 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  font-size: 6em;
+  text-align: right;
+  vertical-align: bottom;
+  /*font-weight: bold;*/
+  /*display: inline;*/
+}
+
+h2 {
+  -webkit-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+  font-size: 7em;
+  text-align: right;
+  font-weight: bolder;
+  /*display: inline;*/
+}
+
+h4 {
+  -webkit-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+  font-size: 2.5em;
+  font-weight: lighter;
+  /*display: inline;*/
+}
+
+#quote {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 6.3s;
+  animation-duration: 2s;
+  animation-delay: 6.3s;
+  font-size: .8em;
+  font-style: italic;
+  font-weight: lighter;  
+  text-align: right;
+  vertical-align: top;
+}
+
+.body {
+  -webkit-animation-delay: 6.8s;
+  animation-delay: 6.8s;
+  margin-top: 5em;
+}
+
+.left-icons {
+  -webkit-animation-delay: 7.2s;
+  animation-delay: 7.2s;
+  overflow: hidden;
+}
+
+.right-icons {
+  -webkit-animation-delay: 7.3s;
+  animation-delay: 7.3s;
+  overflow: hidden;
+}
+
+.footer {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 9.8s;
+  animation-duration: 2s;
+  animation-delay: 9.8s;
+  text-align: center;
+  vertical-align: bottom;
+}
