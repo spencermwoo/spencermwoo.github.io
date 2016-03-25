@@ -20,6 +20,12 @@ p, td, hr {
 .menu-icon {
   text-align: center;
 }
+.menu-icon-left {
+  text-align: left;
+}
+.menu-icon-right {
+  text-align: right;
+}
 /*
 #projects:hover:after {
   content: "Projects";
@@ -131,10 +137,11 @@ h4 {
 }
 
 .footer {
+  /* 9.8 */
   -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 9.8s;
+  -webkit-animation-delay: 7.8s;
   animation-duration: 2s;
-  animation-delay: 9.8s;
+  animation-delay: 7.8s;
   text-align: center;
   vertical-align: bottom;
 }
@@ -147,12 +154,11 @@ h4 {
   animation-delay: 0.2s;
 }
 
-.projects {
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
 
-.interests {
+.work2, 
+.projects, 
+.interests, 
+.contact {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }

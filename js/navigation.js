@@ -5,14 +5,26 @@ $(function(){
 /*page = 0;*/
 
 function initializeTransitions(){
+	$("#work").click(workTransition);
 	$("#projects").click(projectTransition);
 	$("#interests").click(interestTransition);
+	$("#contact").click(contactTransition);
 }
 
 function rotateOut(){
-	$("#body").removeClass('work projects interests contact animated rotateInDownRight');
+	$("#body").removeClass('work work2 projects interests contact animated rotateInDownRight');
 	$("#body").addClass('bodyTransition animated rotateOutUpRight');
 }
+
+function workTransition(){
+	rotateOut();
+	
+	window.setTimeout(function(){
+		$("#body").removeClass('bodyTransition animated rotateOutUpRight');
+		$("#body").addClass('work2 animated rotateInDownRight');
+	}, 850);
+	
+};
 
 function projectTransition(){
 	rotateOut();
@@ -32,14 +44,13 @@ function interestTransition(){
 	}, 850);
 	
 };
-/*
-$(function(){
-	initializeVisibility();
-});
-function initializeVisibility() {
-	$(".body").css('visibility', 'hidden');
-	$(".body").css('opacity', '0'); 
-	$(".body").css('z-index', '-1');
 
-
-}*/
+function contactTransition(){
+	rotateOut();
+	
+	window.setTimeout(function(){
+		$("#body").removeClass('bodyTransition animated rotateOutUpRight');
+		$("#body").addClass('contact animated rotateInDownRight');
+	}, 850);
+	
+};
