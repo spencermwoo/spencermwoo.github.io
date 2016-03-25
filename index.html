@@ -8,12 +8,16 @@
 	    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">-->
 	    <link rel="stylesheet" href="css/style.css" type="text/css">
 		
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	    
 	    <!--<script src="js/bootstrap.js"></script>-->
 		<script src="js/jquery.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
 	    <script src="js/quotes.js"></script>
+		<script src="js/navigation.js"></script>
 
   	</head>
   	<body>
@@ -23,14 +27,24 @@
       		</div>
 
       		<div class = "row">
-      			<div class="col-xs-12 col-md-5">
-      				<h1 class="animated rotateInDownLeft">Hi.</h1>
-					<h4 class="animated rotateInUpLeft">I'm </h4><h2 class="animated rotateInUpLeft">Spencer</h2>
-					<p class = "animated fadeIn" id = "quote">asdfS</p>
+      			<div class = "col-xs-12 col-md-5">
+      				<h1 class = "animated rotateInDownLeft">Hi.</h1>
+					<h4 class = "animated rotateInUpLeft">I'm </h4><h2 class="animated rotateInUpLeft">Spencer</h2>
+					<p class = "animated fadeIn" id = "quote">"And the tree was happy."</p>
+					
+					<br><br><br>
+					<table class = "menu"><tr>
+						<td class = "menu-icon">
+							<a href = "#" data-toggle="tooltip" title = "Projects"><i class = "fa fa-file-text fa-3x footer animated fadeIn" id = "projects"></i></a>
+						</td>
+						<td class = "menu-icon">
+							<a href = "#" data-toggle="tooltip" title = "Interests"><i class = "fa fa-envelope fa-3x footer animated fadeIn" id = "interests"></i></a>
+						</td>
+					</tr></table>
       			</div>
 				
-      			<div class="col-md-7">
-					<div class="body animated rotateInDownRight">
+      			<div class = "col-md-7">
+					<div class = "work animated rotateInDownRight" id = "body">
       				<!--<hr>-->
       					<p>
       						I'm a fourth year student at the University of California, San Diego studying Computer Science with an interest in Computer Security.
@@ -41,31 +55,46 @@
 								<td>
 									<hr>
 									<p class = "company">Wycliffe Associates, Inc. </p><p class = "date">Summer 2015</p>
-									<table><tr><td class = "logo">
-									<img src="images/wycliffeassociates.jpg" class = "third"></td><td class = "work-discription">
 									
-									We worked to develop a freely-licensed recording Android application for the purpose of improving oral translation.
-									</td></tr></table>
+									<table><tr>
+										<td class = "logo">
+											<img src = "images/wycliffeassociates.jpg" class = "third">
+										</td>
+										<td class = "work-discription">	
+											We worked to develop a freely-licensed recording Android application for the purpose of improving oral translation.
+										</td>
+									</tr></table>
+									
 									</hr><br><br>
 								</td></tr><tr>
 								<td>
 									<hr>
 									<p class = "company">Beckman Coulter, Inc. </p><p class = "date">Summer 2014</p>
-									<table><tr><td class = "logo">
-									<img src="images/beckman2.png" class = "third"></td><td class = "work-discription">
 									
-									We worked to migrate an existing intranet and integrate new features to a deployable Wordpress instance.
-									</td></tr></table>
+									<table><tr>
+										<td class = "logo">
+											<img src="images/beckman2.png" class = "third">
+										</td>
+										<td class = "work-discription">
+											We worked to migrate an existing intranet and integrate new features to a deployable Wordpress instance.
+										</td>
+									</tr></table>
+									
 									</hr><br><br>
 								</td></tr><tr>
 								<td>
 									<hr>
 									<p class = "company">The Boeing Company </p><p class = "date">Summer 2011</p>
-									<table><tr><td class = "logo">
-									<img src="images/boeing.png" class = "third"></td><td class = "work-discription">
 									
-									My primary project was to implement and troubleshoot programs in a Linux environment, documenting the proper workflow.
-									</td></tr></table>
+									<table><tr>
+										<td class = "logo">
+											<img src="images/boeing.png" class = "third">
+										</td>
+										<td class = "work-discription">
+											My primary project was to implement and troubleshoot programs in a Linux environment, documenting the proper workflow.
+										</td>
+									</tr></table>
+									
 									</hr><br><br>
 							</tr></table>
 							<br>
@@ -76,11 +105,11 @@
       			<div class="row">
       			<div class="animated fadeIn">
             		<div class="left-icons col-xs-4 col-xs-offset-1 animated rotateInUpLeft">
-            			<!--Left Icons-->
+						<i class="fa fa-file-text fa-3x"></i>
             			<!--<a href="#"><img src = "#"></a>-->
             		</div>
             		<div class="right-icons col-xs-4 animated rotateInUpRight">
-            			<!--Right Icons-->
+						<i class="fa fa-envelope fa-3x"></i>
             			<!--<a href="#"><img src = "#"></a>-->
             		</div>
             	</div>
@@ -89,7 +118,7 @@
 					<br><br>
 					<footer>
 						<div class = "footer animated fadeIn">
-			              <h6>&copy; 2016 Spencer Woo</h6>
+			              <h6>&copy; Spencer Woo, 2016</h6>
 						</div>
 			        </footer>
       			</div>
@@ -113,6 +142,8 @@
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 		  ga('create', 'UA-75506500-1', 'auto');
+		  ga('send', 'pageview');
+		  ga('send', 'pageview');
 		  ga('send', 'pageview');
 
 		</script>

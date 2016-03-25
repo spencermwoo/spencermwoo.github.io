@@ -22,7 +22,7 @@ function randomizeQuotes() {
 	"Nothing is as healing as the human touch.",
 	"Nothing is more human than to wish for renewal when springtime comes.",
 	/*"Look not where you have fallen but where you slipped.",*/
-	"What were we doing when we unchained this earth from the sun?",
+	/*"What were we doing when we unchained this earth from the sun?",*/
 
 	/*"We were always suckers for ridiculous hats.",
 	"I object to being called a chess genius because I consider myself to be an all around genius who happens to play chess.",
@@ -47,7 +47,7 @@ function randomizeQuotes() {
 	"I don't mean to sound extreme but death penalty.",*/
 	];
 
-	var max = quotes.length;
+	var max = (quotes.length - 1);
 	var min = 0;
 	var n = Math.floor(Math.random() * (max - min + 1)) + min;
 	/*document.getElementById('quote').innerHTML = 'pls';*/
