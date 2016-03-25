@@ -87,9 +87,8 @@ h4 {
 }
 
 .body {
-  /* 6.8 */
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 6.8s;
+  animation-delay: 6.8s;
   margin-top: 5em;
 }
 
