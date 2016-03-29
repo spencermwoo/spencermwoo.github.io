@@ -119,7 +119,7 @@ h4 {
   vertical-align: top;
 }
 
-.work {
+.main {
   -webkit-animation-delay: 6.8s;
   animation-delay: 6.8s;
 }
@@ -155,7 +155,7 @@ h4 {
 }
 
 
-.work2, 
+.work, 
 .projects, 
 .interests, 
 .contact {
