@@ -12,6 +12,7 @@ var contactPath = "content/contact.html";
 
 /*page = 0;*/
 
+//TODO : implement Higher Order Functions
 function initializeTransitions(){
 	$("#work").click(workTransition);
 	$("#projects").click(projectTransition);
@@ -25,46 +26,58 @@ function rotateOut(){
 }
 
 function workTransition(){
-	rotateOut();
-	
-	window.setTimeout(function(){
-		$("#body").removeClass('bodyTransition animated rotateOutUpRight');
-		$("#body").addClass('work animated rotateInDownRight');
-	}, 850);
+	if($("#body").hasClass("work")){
+	}else{
+		rotateOut();
+		
+		window.setTimeout(function(){
+			$("#body").removeClass('bodyTransition animated rotateOutUpRight');
+			$("#body").addClass('work animated rotateInDownRight');
 
-	$("#body").load(workPath);
-	
+			$("#body").load(workPath);
+		}, 850);
+	}
 };
 
 function projectTransition(){
-	rotateOut();
+	if($("#body").hasClass("projects")){
+	}else{
+		rotateOut();
 
-	window.setTimeout(function(){
-		$("#body").removeClass('bodyTransition animated rotateOutUpRight');
-		$("#body").addClass('projects animated rotateInDownRight');
-	}, 850);
-
-	$("#body").load(projectsPath);
+		window.setTimeout(function(){
+			$("#body").removeClass('bodyTransition animated rotateOutUpRight');
+			$("#body").addClass('projects animated rotateInDownRight');
+			
+			$("#body").load(projectsPath);
+		}, 850);
+	}
 };
 
 function interestTransition(){
-	rotateOut();
-	
-	window.setTimeout(function(){
-		$("#body").removeClass('bodyTransition animated rotateOutUpRight');
-		$("#body").addClass('interests animated rotateInDownRight');
-	}, 850);
-	
-	$("#body").load(interestsPath);
+	if($("#body").hasClass("interests")){
+	}else{
+		rotateOut();
+		
+		window.setTimeout(function(){
+			$("#body").removeClass('bodyTransition animated rotateOutUpRight');
+			$("#body").addClass('interests animated rotateInDownRight');
+			
+			$("#body").load(interestsPath);
+		}, 850);
+	}
 };
 
 function contactTransition(){
-	rotateOut();
-	
-	window.setTimeout(function(){
-		$("#body").removeClass('bodyTransition animated rotateOutUpRight');
-		$("#body").addClass('contact animated rotateInDownRight');
-	}, 850);
-	
-	$("#body").load(contactPath);
+	if($("#body").hasClass("contact")){
+	}else{
+		rotateOut();
+		
+		window.setTimeout(function(){
+			$("#body").removeClass('bodyTransition animated rotateOutUpRight');
+			$("#body").addClass('contact animated rotateInDownRight');
+			
+
+			$("#body").load(contactPath);
+		}, 850);
+	}
 };

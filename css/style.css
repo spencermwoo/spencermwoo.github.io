@@ -9,9 +9,14 @@ h2,
 h3,
 h4,
 h5,
-p, td, hr {
+p, td, hr, div {
   font-family: 'Montserrat', sans-serif;
   margin-top: 0;
+}
+
+h3 {
+  text-align: right;
+  font-weight: bolder;
 }
 
 .menu {
@@ -62,6 +67,9 @@ p, td, hr {
   font-weight: lighter;
   font-size: .9em;
 }
+.right {
+  text-align: right;
+}
 
 .logo {
   text-align: left;
@@ -78,6 +86,19 @@ p, td, hr {
   text-align: left;
   vertical-align: top;
   padding-left: 2em;
+}
+#profile {
+  text-align: right;
+  padding-right: 2em;
+}
+#bio {
+  vertical-align: top;
+  text-align: left;
+}
+#profile-pic {
+  max-width: 100%;
+  /*border-radius: 40%;
+  border-width: 10%;*/
 }
 /* animation stagger */
 h1 {
