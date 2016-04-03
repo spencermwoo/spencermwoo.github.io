@@ -12,7 +12,7 @@ var contactPath = "content/contact.html";
 
 /*page = 0;*/
 
-//TODO : implement Higher Order Functions
+//TODO : use Higher Order Functions
 //http://www.sitepoint.com/higher-order-functions-javascript/
 function initializeTransitions(){
 	$("#work").click(workTransition);
@@ -27,6 +27,7 @@ function rotateOut(){
 }
 
 function workTransition(){
+	/*alert("A");*/
 	if($("#body").hasClass("work")){
 	}else{
 		rotateOut();
