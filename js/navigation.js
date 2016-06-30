@@ -12,7 +12,7 @@ var contactPath = "content/contact.html";
 
 /*page = 0;*/
 
-//TODO : use Higher Order Functions
+//TODO : Higher Order Functions
 //http://www.sitepoint.com/higher-order-functions-javascript/
 function initializeTransitions(){
 	$("#work").click(workTransition);
