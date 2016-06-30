@@ -23,16 +23,6 @@
   	</head>
   	<body>
 
-		<!-- SCM Music Player http://scmplayer.net -->
-		<!--<script type="text/javascript" src="http://scmplayer.net/script.js" 
-		data-config="{'skin':'skins/black/skin.css','volume':50,'autoplay':true,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':true,'playlist':[
-		{'title':'Devil Like Me','url':'https://www.youtube.com/watch?v=rB3GPb-ylVI'},
-		{'title':'Used To Be Golden','url':'https://www.youtube.com/watch?v=BbURlaAMHKY'},
-		{'title':'Hold Me Down','url':'https://www.youtube.com/watch?v=NRxGGA9L48U'},
-		{'title':'Pieces','url':'https://www.youtube.com/watch?v=izXScOqVhMM'},
-		{'title':'Open','url':'https://www.youtube.com/watch?v=VvaC-8FbtYg'},
-		{'title':'Work','url':'https://www.youtube.com/watch?v=LEoVyJGVdg4'}
-		]}" ></script>-->
 		<div class = "container">
   			<div class = "canv">
         		<canvas height = "100"></canvas>
@@ -62,6 +52,57 @@
 						</td>
 					</tr></table>
 					<br><br>
+
+  		
+					<i class = "footer animated fadeIn"><div id="player"></div></i>
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '100',
+          width: '460',
+          //videoId: videoIDs[counter],
+          playerVars: { 
+        	  'autoplay': 1, 
+        	  'controls': 1,
+        	  'listType': 'playlist',
+        	  'list'    : 'PL4otHF15gsL0WQR1zewP18b1EjzgIJM2w'
+        	  //'playlist':['YNnwtxNkwBI', 'hVHtuFAdpJE', 'YqWiIp_KLUc']},
+        		    },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+    	  if (event.data == YT.PlayerState.ENDED) {
+    		  counter++;
+    	  }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
       			</div>
 				
       			<div class = "col-md-7">
