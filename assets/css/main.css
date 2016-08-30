@@ -1873,15 +1873,14 @@
 	  font-style: italic;
 	  font-weight: lighter;  
 	}
-	.footer {
-	  /* 9.8 */
+	/*.footer {
 	  -webkit-animation-duration: 2s;
 	  -webkit-animation-delay: 7.8s;
 	  animation-duration: 2s;
 	  animation-delay: 7.8s;
 	  text-align: center;
 	  vertical-align: bottom;
-	}
+	}*/
 
 	sub {
 		font-size: 0.8em;
