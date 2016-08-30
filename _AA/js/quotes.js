@@ -1,11 +1,8 @@
-/*$(document).ready(function() {
-	randomizeQuotes();
-})*/
-
 $(function(){
-	randomizeQuotes();
+	RandomizeQuotes();
 });
-function randomizeQuotes() {
+
+function RandomizeQuotes() {
 	var quotes = [
 	"Computers are useless.  They can only give you answers.",
 	/*"If you don't trust people, you make them untrustworthy.",
@@ -48,12 +45,12 @@ function randomizeQuotes() {
 	"Caitlyn Jenner looks a lot like Bruce Jenner.",
 	"I don't mean to sound extreme but death penalty.",*/
 
-	"It is the glory of God to conceal things, but the glory of kings is to search things out.",
-	"If I were still trying to please man, I would not be a servant of Christ.",
+	"It is the glory of God to conceal things, but the glory of kings is to search things out."
+	
+	/*"If I were still trying to please man, I would not be a servant of Christ.",
 
 	"As far as the east is from the west, so far has he removed our transgressions from us."
-
-	/*"The conclusion, when all has been heard, is : fear God and keep His commandments, because this applies to every person.",
+	"The conclusion, when all has been heard, is : fear God and keep His commandments, because this applies to every person.",
 	"Do not be deceived, God is not mocked; for whatever a man sows, this he will also reap.",
 	"So whether you eat or drink, or whatever you do, do all to the glory of God.",
 	
@@ -90,6 +87,6 @@ function randomizeQuotes() {
 	var max = (quotes.length - 1);
 	var min = 0;
 	var n = Math.floor(Math.random() * (max - min + 1)) + min;
-	/*document.getElementById('quote').innerHTML = 'pls';*/
+
 	$("#quote").text("\"" + quotes[n] + "\"");
 }

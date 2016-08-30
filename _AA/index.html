@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+    	<title>Spencer Woo</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/animate.css" type="text/css">
+	    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">-->
+	    <link rel="stylesheet" href="css/style.css" type="text/css">
+		
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	    
+	    <!--<script src="js/bootstrap.js"></script>-->
+		<script src="js/jquery.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/quotes.js"></script>
+		<script src="js/navigation.js"></script>
+
+  	</head>
+  	<body>
+
+		<div class = "container">
+  			<div class = "canv">
+        		<canvas height = "100"></canvas>
+      		</div>
+
+      		<div class = "row">
+      			<div class = "col-xs-12 col-md-5">
+      				<h1 class = "animated rotateInDownLeft">Hi.</h1>
+					<h4 class = "animated rotateInUpLeft">I'm </h4><h2 class="animated rotateInUpLeft">Spencer</h2>
+					<h6 class = "animated fadeIn" id = "quote">"And the tree was happy."</p>
+					
+					<br>
+					<table class = "menu"><tr>
+						
+						<td class = "menu-icon">
+							<a href = "#" data-toggle="tooltip" title = "Home" id = "contact"><i class = "fa fa-home fa-3x footer animated fadeIn" ></i></a>
+						</td>
+						<td class = "menu-icon">
+							<a href = "#" data-toggle="tooltip" title = "Music" id = "interests"><i class = "fa fa-soundcloud fa-3x footer animated fadeIn" ></i></a>
+						</td>
+						<td class = "menu-icon">
+							<a href = "#" data-toggle="tooltip" title = "Projects" id = "projects"><i class = "fa fa-file-code-o fa-3x footer animated fadeIn" ></i></a>
+						</td>
+
+						<td class = "menu-icon">
+							<a href = "#" data-toggle="tooltip" title = "Work Experience" id = "work"><i class = "fa fa-group fa-3x footer animated fadeIn"></i></a>
+						</td>
+						
+					</tr></table>
+					<br><br>
+
+  		
+					<i class = "footer animated fadeIn"><div id="player"></div></i>
+				    <script>
+				      // 2. This code loads the IFrame Player API code asynchronously.
+				      var tag = document.createElement('script');
+
+				      tag.src = "https://www.youtube.com/iframe_api";
+				      var firstScriptTag = document.getElementsByTagName('script')[0];
+				      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+				      // 3. This function creates an <iframe> (and YouTube player)
+				      //    after the API code downloads.
+				      var player;
+				      function onYouTubeIframeAPIReady() {
+				        player = new YT.Player('player', {
+				          height: '100',
+				          width: '460',
+				          //videoId: videoIDs[counter],
+				          playerVars: { 
+				        	  'autoplay': 1, 
+				        	  'controls': 1,
+				        	  'listType': 'playlist',
+				        	  'list'    : 'PL4otHF15gsL0WQR1zewP18b1EjzgIJM2w'
+				        	  //'playlist':['YNnwtxNkwBI', 'hVHtuFAdpJE', 'YqWiIp_KLUc']},
+				        		    },
+				          events: {
+				            'onReady': onPlayerReady,
+				            'onStateChange': onPlayerStateChange
+				          }
+				        });
+				      }
+				      
+				      // 4. The API will call this function when the video player is ready.
+				      function onPlayerReady(event) {
+				        event.target.playVideo();
+				      }
+
+				      // 5. The API calls this function when the player's state changes.
+				      //    The function indicates that when playing a video (state=1),
+				      //    the player should play for six seconds and then stop.
+				      var done = false;
+				      function onPlayerStateChange(event) {
+				    	  if (event.data == YT.PlayerState.ENDED) {
+				    		  counter++;
+				    	  }
+				      }
+				      function stopVideo() {
+				        player.stopVideo();
+				      }
+				    </script>
+      			</div>
+				
+      			<div class = "col-md-7">
+					<!--<div class = "main animated rotateInDownRight" id = "body">
+						<br><br>
+						main holder
+						<br><br>-->
+					<div class = "main animated rotateInDownRight" id = "body">
+						<p>
+<hr>
+
+<table><tr>
+	<td id = "profile">
+		<img src = "images/me.jpg" id = "profile-pic"/>
+	</td>
+	<td id = "bio">
+		I'm a recent graduate from the University of California, San Diego with a bachelor's in computer science.
+		<br><br>
+		In my spare time I enjoy playing board games, listening to music, hiking, and serving in my local church.  I also maintain a blog but these days that goes without saying.
+	
+		<br><br>
+		Contact me X, Y, Z, or at smwoo2016@gmail.com
+	
+	</td>
+</tr></table>
+<br><br>
+
+<button type="button" id="btn_pgp" onclick="toggle();">Toggle PGP Key</button>
+<br>
+<a id="pgp_key" style="display:none;">
+<pre>
+-----BEGIN PGP PUBLIC KEY BLOCK----- 
+Version: GnuPG v2 
+
+mQENBFd0wloBCACWwmQJoA9LR3LMf+6WTRnE/sLsGNWiYYrLNznQgL+7hITWFiSZ 
+3/FIi2kR1RMgKE5wO8tzB876qUBS90kiU5PiVBi07hkUcCnq+QiWBcBqXqpIuByt 
+QxH1ZcezJYSoL4mjKYggNG194Rr7QzaCXDZTwDokqpK5mXEM6qyrP4kh+6sf0P45 
+WmF+WRdALqAcP3HpqhFzx+chqn/WQwB17JFvBRsCMjdwfSyodWHQfR4m/VXW4Mfq 
+g1BBMSnQ07QzGbjZpzTj5ZRTwDY5Lbw8l07JBbueyaOOTRp5mXz1m+CDc7PyuBV7 
+GV85Vpm16fR7/K95QBOHIVtEpkMagOSkUk/XABEBAAG0MWQ0VXNIZnFoSVpTVzBm 
+RVMgPG5vdGF2YWxpZGVtYWlsQGZha2V3ZWJzaXRlLmNvbT6JATkEEwEIACMFAld0 
+wloCGwMHCwkIBwMCAQYVCAIJCgsEFgIDAQIeAQIXgAAKCRAPyymuUvGl79DeB/40 
+OYWPzn8Wm9wpOOv52ilYfwqkKEOU0VJ4/GTy5MEa7mgl7pz9IzWjXWF1PUcvmXvz 
+1hmxMdIs1bR0miqLDHl/dWQnbgEnWHCsnEwEmWrpmRc3SLarfrwIUxKq8vJRKUC2 
+N0oNoxSvq5RJNdKa9eK591F7jSC4SPjYPPmDKes++A8Oi3vpmGrDgf1l3Z1AN8zO 
+eSUFoiyGsYMK7e6NeQ0fKNowq4YHB5ZNw5lZMDswxOERiYSfZmywja4L52uarFvf 
+YM33PNRXHCCrVr1gf6Om4zItiSfudtbyM1NIQaI11zjhp0PYbvVe9wAebZCTl0EH 
+QbI4ETSdhHYZYxPwlBK0uQENBFd0wloBCAChGkY6NXna005gtbeTpfBec9hzjXKX 
+OP3hpcBt8Wj4RemZpsGOg8nvkbKj9lY7rYuqf2/cCax9feGgkFIb5R1nY4Q3Cv6q 
+rD4sjFK7te+FTh11F57qXI8D3RrUU6opZGZOiVtm3KP61uNq8pIELHF0G+YAkCpX 
+RYCUHRPLGxSCLNnhXdsYnzl33tyE3JyNqdfuEMr6sUze0bKeu88HscDOHIDPyubU 
+IZGc8f0QkBHXWo8hTpk6jeVF2iTltC6jp88WvOfKZUMM/GymWsqx5jZiZkj7AGoN 
+x70fMcT3HHLXVkHKWcs0ELnIGBA95bmtNdh6FDATKYgnVj0qp934w7pzABEBAAGJ 
+AR8EGAEIAAkFAld0wloCGwwACgkQD8sprlLxpe9bTwf+MKl0y2+5AgoGWKcDLuQV 
+eWvwxbOXWrIXPsSlnulNuxyGPiqo5Dn/r155tIsJKVvKKxkE6oG6YiwYzMLOZepk 
+mvDAFXduuo+6C98bL0ciqU2IxI5ivNTcCQAO0tqrrgbXaM4h+tHdzZ9tAdMgCv0b 
+nIhMEDCzBeDh7Izfa0d9Uv0gnQwoVC7xGHQwRxHYNJVyD8WsA6fbztC0gTyiNThE 
+XV21lg7BTuVv2Gy8o3aHCe246NFu8UqN+ZBni6vlCKPQe3n7HYiqjvxp2LUXx5ZQ 
+iQl4riLhTFhnXtps7xXw392tvTDOTwymgq7hNniHDSq015OrLUZ9iZnRK+tehnBT 
+kg== 
+=fw6g 
+-----END PGP PUBLIC KEY BLOCK-----
+</pre>
+</a>
+
+<br><br>
+
+<hr>
+</p>
+<script>
+$(document).ready(function(){
+	$("#pgp_key").hide();
+
+	$("#btn_pgp").click(function(){
+	    $("#pgp_key").toggle('fast');
+	});
+});
+</script>
+      				</div>
+      			<div class="row">
+      			<div class="animated fadeIn">
+            		<div class="left-icons col-xs-4 col-xs-offset-1 animated rotateInUpLeft">
+					
+					<!--<table class = "menu"><tr>
+						<td class = "menu-icon">
+							<i class="fa fa-headphones fa-3x"></i>
+						</td>
+						<td class = "menu-icon">
+							<i class="fa fa-github-square fa-3x"></i>
+						</td>
+					</table>-->
+
+            			<!--<a href="#"><img src = "#"></a>-->
+            		</div>
+            		<div class="right-icons col-xs-4 animated rotateInUpRight">
+						
+					<!--<table class = "menu"><tr>
+						<td class = "menu-icon">
+							<i class="fa fa-music fa-3x"></i>
+						</td>
+						<td class = "menu-icon">
+							<i class="fa fa-linkedin fa-3x"></i>
+						</td>
+					</table>-->
+						
+            			<!--<a href="#"><img src = "#"></a>-->
+            		</div>
+            	</div>
+            	</div>
+
+					<br><br>
+					<footer>
+						<div class = "footer animated fadeIn">
+			              <h6>&copy; 2016 Spencer Woo</h6>
+						</div>
+			        </footer>
+      			</div>
+      		</div>
+
+
+			<!--
+			I don't think we've met, I'm Spencer.		Name.
+			How can I contact you?				Email.
+			What would you like to talk about?		Subject.
+			I'm listening.					Message.
+
+			Send
+			-->
+
+    	</div>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-75506500-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+  	</body>
+</html>
