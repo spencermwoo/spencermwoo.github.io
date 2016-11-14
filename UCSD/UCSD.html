@@ -1,0 +1,190 @@
+
+<html>
+<body>
+<script src="js/jquery.min.js"></script>
+<script src="js/springy.js"></script>
+<script src="js/springyui.js"></script>
+
+<script>
+var graph = new Springy.Graph();
+graph.addNodes('FALL 2012', 'CAT 1', 'CSE 8A', 'CSE 8AL', 'CSE 91', 'MATH 20A');
+graph.addNodes('WINTER 2013', 'CAT 2', 'CSE 8B', 'ECON 1', 'MATH 20A');
+graph.addNodes('SPRING 2013', 'CAT 3', 'CSE 12', 'CSE 15L', 'CSE 20', 'MATH 20B');
+graph.addNodes('SUMMER 2013');
+
+graph.addNodes('FALL 2013', 'CSE 21', 'CSE 30', 'MATH 20C');
+graph.addNodes('WINTER 2014', 'COGS 17', 'CSE 100', 'MUS 15', 'MATH 20C');
+graph.addNodes('SPRING 2014', 'CSE 101', 'CSE 110', 'MATH 20F', 'PHIL 13');
+graph.addNodes('SUMMER 2014');
+
+graph.addNodes('FALL 2014', 'CSE 103', 'CSE 120', 'CSE 140', 'CSE 140L');
+graph.addNodes('WINTER 2015', 'CAT 125', 'CSE 105', 'CSE 132A', 'MUS 5');
+graph.addNodes('SPRING 2015', 'CSE 127', 'CSE 130', 'CSE 141', 'CSE 141L');
+graph.addNodes('SUMMER 2015');
+
+graph.addNodes('FALL 2015', 'CSE 123', 'CSE 127', 'TDAC 1');
+graph.addNodes('WINTER 2016', 'CSE 130', 'CSE 170', 'ECON 109', 'PHIL 170');
+graph.addNodes('SPRING 2016', 'CSE 131', 'CSE 135', 'ENG 100D', 'MGT 103');
+graph.addNodes('SUMMER 2016', 'CSE 136');
+
+/*graph.addNodes('FALL 2012');
+graph.addNodes('FALL 2013', 'WINTER 2013', 'SPRING 2013', 'SUMMER 2013');
+graph.addNodes('FALL 2014', 'WINTER 2014', 'SPRING 2014', 'SUMMER 2014');
+graph.addNodes('FALL 2015', 'WINTER 2015', 'SPRING 2015', 'SUMMER 2015');
+graph.addNodes('FALL 2016', 'WINTER 2016', 'SPRING 2016', 'SUMMER 2016');*/
+
+
+graph.addEdges(
+  /* Quarters */
+  ['FALL 2012', 'WINTER 2013', {color: '#0000FF'}],
+  ['WINTER 2013', 'SPRING 2013', {color: '#0000FF'}],
+  ['SPRING 2013', 'SUMMER 2013', {color: '#0000FF'}],
+  ['SUMMER 2013', 'FALL 2013', {color: '#0000FF'}],
+
+  ['FALL 2013', 'WINTER 2014', {color: '#0000FF'}],
+  ['WINTER 2014', 'SPRING 2014', {color: '#0000FF'}],
+  ['SPRING 2014', 'SUMMER 2014', {color: '#0000FF'}],
+  ['SUMMER 2014', 'FALL 2014', {color: '#0000FF'}],
+
+  ['FALL 2014', 'WINTER 2015', {color: '#0000FF'}],
+  ['WINTER 2015', 'SPRING 2015', {color: '#0000FF'}],
+  ['SPRING 2015', 'SUMMER 2015', {color: '#0000FF'}],
+  ['SUMMER 2015', 'FALL 2015', {color: '#0000FF'}],
+
+  ['FALL 2015', 'WINTER 2016', {color: '#0000FF'}],
+  ['WINTER 2016', 'SPRING 2016', {color: '#0000FF'}],
+  ['SPRING 2016', 'SUMMER 2016', {color: '#0000FF'}],
+  
+  /* Quarter Courses */
+  ['FALL 2012', 'CSE 8A', {color: '#FF0000'}],
+  ['FALL 2012', 'CSE 8AL', {color: '#FF0000'}],
+  ['FALL 2012', 'CAT 1', {color: '#FF0000'}],
+  ['FALL 2012', 'CSE 91', {color: '#FF0000'}],
+  ['FALL 2012', 'MATH 20A', {color: '#FF0000'}],
+
+  ['WINTER 2013', 'CSE 8B', {color: '#FF0000'}],
+  ['WINTER 2013', 'ECON 1', {color: '#FF0000'}],
+  ['WINTER 2013', 'CAT 2', {color: '#FF0000'}],
+  //['WINTER 2013', 'MATH 20A', {color: '#FF0000'}],
+
+  ['SPRING 2013', 'CSE 12', {color: '#FF0000'}],
+  ['SPRING 2013', 'CSE 15L', {color: '#FF0000'}],
+  ['SPRING 2013', 'CSE 20', {color: '#FF0000'}],
+  ['SPRING 2013', 'CAT 3', {color: '#FF0000'}],
+  ['SPRING 2013', 'MATH 20B', {color: '#FF0000'}],
+
+  ['FALL 2013', 'CSE 21', {color: '#FF0000'}],
+  ['FALL 2013', 'CSE 30', {color: '#FF0000'}],
+  ['FALL 2013', 'MATH 20C', {color: '#FF0000'}],
+
+  ['WINTER 2014', 'COGS 17', {color: '#FF0000'}],
+  ['WINTER 2014', 'CSE 100', {color: '#FF0000'}],
+  ['WINTER 2014', 'MUS 15', {color: '#FF0000'}],
+  //['WINTER 2014', 'MATH 20C', {color: '#FF0000'}],
+
+  ['SPRING 2014', 'CSE 101', {color: '#FF0000'}],
+  ['SPRING 2014', 'CSE 110', {color: '#FF0000'}],
+  ['SPRING 2014', 'MATH 20F', {color: '#FF0000'}],
+  ['SPRING 2014', 'PHIL 13', {color: '#FF0000'}],
+
+  ['FALL 2014', 'CSE 103', {color: '#FF0000'}],
+  ['FALL 2014', 'CSE 120', {color: '#FF0000'}],
+  ['FALL 2014', 'CSE 140', {color: '#FF0000'}],
+  ['FALL 2014', 'CSE 140L', {color: '#FF0000'}],
+
+  ['WINTER 2015', 'CAT 125', {color: '#FF0000'}],
+  ['WINTER 2015', 'CSE 105', {color: '#FF0000'}],
+  ['WINTER 2015', 'CSE 132A', {color: '#FF0000'}],
+  ['WINTER 2015', 'MUS 5', {color: '#FF0000'}],
+
+  //['SPRING 2015', 'CSE 127', {color: '#FF0000'}],
+  ['SPRING 2015', 'CSE 130', {color: '#FF0000'}],
+  ['SPRING 2015', 'CSE 141', {color: '#FF0000'}],
+  ['SPRING 2015', 'CSE 141L', {color: '#FF0000'}],
+
+  ['FALL 2015', 'CSE 127', {color: '#FF0000'}],
+  ['FALL 2015', 'CSE 123', {color: '#FF0000'}],
+  ['FALL 2015', 'TDAC 1', {color: '#FF0000'}],
+
+  ['WINTER 2016', 'CSE 130', {color: '#FF0000'}],
+  ['WINTER 2016', 'CSE 170', {color: '#FF0000'}],
+  ['WINTER 2016', 'ECON 109', {color: '#FF0000'}],
+  ['WINTER 2016', 'PHIL 170', {color: '#FF0000'}],
+
+  ['SPRING 2016', 'CSE 131', {color: '#FF0000'}],
+  ['SPRING 2016', 'CSE 135', {color: '#FF0000'}],
+  ['SPRING 2016', 'ENG 100D', {color: '#FF0000'}],
+  ['SPRING 2016', 'MGT 103', {color: '#FF0000'}],
+
+  ['SUMMER 2016', 'CSE 136', {color: '#FF0000'}],
+
+  /* Prerequisite */
+  //['CSE 8A', 'CSE 8AL', {color: '#6A4A3C'}],
+  ['CSE 8AL', 'CSE 8A', {color: '#000000'}],
+
+  ['CSE 8A', 'CSE 8B', {color: '#000000'}],
+  //['CSE 8AL', 'CSE 8B', {color: '#000000'}],
+  ['CSE 8B', 'CSE 12', {color: '#000000'}],
+  ['CSE 8B', 'CSE 20', {color: '#000000'}],
+  
+  //['CSE 12', 'CSE 15L', {color: '#6A4A3C'}],
+  ['CSE 15L', 'CSE 12', {color: '#000000'}],
+
+  ['CSE 12', 'CSE 105', {color: '#000000'}],
+  ['CSE 12', 'CSE 110', {color: '#000000'}],
+
+  ['CSE 20', 'CSE 21', {color: '#000000'}],
+  ['CSE 21', 'CSE 30', {color: '#000000'}],
+  ['CSE 30', 'CSE 100', {color: '#000000'}],
+  
+  ['CSE 100', 'CSE 101', {color: '#000000'}],
+  //['CSE 100', 'CSE 103', {color: '#000000'}],
+  //['CSE 100', 'CSE 110', {color: '#000000'}],
+  ['CSE 100', 'CSE 140', {color: '#000000'}],
+  ['CSE 100', 'CSE 140L', {color: '#000000'}],
+
+  ['CSE 105', 'CSE 130', {color: '#000000'}],
+  ['CSE 110', 'CSE 120', {color: '#000000'}],
+
+  ['CSE 120', 'CSE 123', {color: '#000000'}],
+  ['CSE 120', 'CSE 132A', {color: '#000000'}],
+
+  ['CSE 120', 'CSE 127', {color: '#000000'}],
+  ['CSE 140', 'CSE 141', {color: '#000000'}],
+  ['CSE 140', 'CSE 141L', {color: '#000000'}],
+
+  ['CSE 100', 'CSE 170', {color: '#000000'}],
+  ['CSE 130', 'CSE 131', {color: '#000000'}],
+  ['CSE 130', 'CSE 135', {color: '#000000'}],
+  ['CSE 135', 'CSE 136', {color: '#000000'}],
+
+  ['CSE 140L', 'CSE 140', {color: '#000000'}],
+  ['CSE 141L', 'CSE 141', {color: '#000000'}],
+  
+  ['CAT 1', 'CAT 2', {color: '#000000'}],
+  ['CAT 2', 'CAT 3', {color: '#000000'}],
+  ['CAT 3', 'CAT 125', {color: '#000000'}],
+
+  ['MATH 20A', 'MATH 20B', {color: '#000000'}],
+  ['MATH 20B', 'MATH 20C', {color: '#000000'}],
+  
+  ['MATH 20B', 'CSE 103', {color: '#000000'}],
+
+  ['MATH 20C', 'MATH 20F', {color: '#000000'}],
+
+  ['ECON 1', 'ECON 109', {color: '#000000'}],
+
+  ['PHIL 13', 'PHIL 170', {color: '#000000'}]
+  );
+
+jQuery(function(){
+  var springy = jQuery('#UCSD').springy({
+    graph: graph
+  });
+});
+</script>
+
+<canvas id="UCSD" width="2000" height="1200" />
+  
+</body>
+</html>

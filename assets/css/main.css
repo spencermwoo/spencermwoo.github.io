@@ -1882,6 +1882,23 @@
 	  vertical-align: bottom;
 	}*/
 
+	.videowrapper {
+	    float: none;
+	    clear: both;
+	    width: 65%;
+	    position: relative;
+	    padding-bottom: 1%;
+	    padding-top: 25px;
+	    height: 0;
+	}
+	.videowrapper iframe {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 65%;
+	    height: 40%;
+	}
+
 	sub {
 		font-size: 0.8em;
 		position: relative;
