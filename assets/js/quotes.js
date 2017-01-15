@@ -22,11 +22,21 @@ function RandomizeQuotes() {
 	"Nothing is more human than to wish for renewal when springtime comes.",
 	/*"Look not where you have fallen but where you slipped.",*/
 	"What were we doing when we unchained this earth from the sun?",
+	"The Earth was small, light blue, and so touchingly alone...".
 
 	/*"We were always suckers for ridiculous hats.",
 	"I object to being called a chess genius because I consider myself to be an all around genius who happens to play chess.",
 	"And Richard Cory, one calm summer night . . .",*/
 	"And the tree was happy.",
+	//"Everything dies, baby that's a fact."
+	//"I've got debts no honest man can pay."
+
+	//"Jesus Christ, that's a pretty face."
+
+	//"You have to be odd to be number one."
+	//"I want to die on Mars, just not on impact."
+	//"This looks like a good place to relapse."
+	//"Capacity is not value."
 
 	/*"So it goes . . .",
 	"All of man's miseries derive from not being able to sit in a room alone",
