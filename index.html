@@ -16,6 +16,7 @@
 
 		<script src="assets/js/jquery.min.js"></script>
 	    <script src="assets/js/quotes.js"></script>
+	    <script src="assets/js/youtube.js"></script>
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -27,8 +28,8 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Projects</a></li>
-							<li><a href="#two">Interests</a></li>
+							<li><a href="#one">Music</a></li>
+							<li><a href="#two">Hobbies</a></li>
 							<li><a href="#three">Holler</a></li>
 						</ul>
 					</nav>
@@ -57,147 +58,64 @@
 								<br><br>
 							<!--<div class = "videowrapper">
 								<i class = "animated fadeIn"><div id="player"></div></i>-->
-								<div id = "player">
-							    <script>
-							      // 2. This code loads the IFrame Player API code asynchronously.
-							      var tag = document.createElement('script');
-
-							      tag.src = "https://www.youtube.com/iframe_api";
-							      var firstScriptTag = document.getElementsByTagName('script')[0];
-							      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-							      // 3. This function creates an <iframe> (and YouTube player)
-							      //    after the API code downloads.
-							      var player;
-							      function onYouTubeIframeAPIReady() {
-							        player = new YT.Player('player', {
-							          height: '300',
-							          width: '560',
-							          //videoId: videoIDs[counter],
-							          playerVars: { 
-							        	  'autoplay': 1, 
-							        	  'controls': 1,
-							        	  'listType': 'playlist',
-							        	  'list'    : 'PL4otHF15gsL0WQR1zewP18b1EjzgIJM2w'
-							        	  //'playlist':['YNnwtxNkwBI', 'hVHtuFAdpJE', 'YqWiIp_KLUc']},
-							        		    },
-							          events: {
-							            'onReady': onPlayerReady,
-							            'onStateChange': onPlayerStateChange
-							          }
-							        });
-							      }
-							      
-							      // 4. The API will call this function when the video player is ready.
-							      function onPlayerReady(event) {
-							        event.target.playVideo();
-							      }
-
-							      // 5. The API calls this function when the player's state changes.
-							      //    The function indicates that when playing a video (state=1),
-							      //    the player should play for six seconds and then stop.
-							      var done = false;
-							      function onPlayerStateChange(event) {
-							    	  if (event.data == YT.PlayerState.ENDED) {
-							    		  counter++;
-							    	  }
-							      }
-							      function stopVideo() {
-							        player.stopVideo();
-							      }
-							    </script>
-
+								<div id = "intro">
 							<!--<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>-->
 						<!--</div>-->
 						</div>
 					</section>
-				<!-- Two -->
+				<!-- One -->
 					<section id="one" class="wrapper style2 fade-up">
 						<div class="inner">
-							<h4>Work Experience</h4>
 							<div class="features">
 								<section>
-									<!--<span class="icon major fa-code"></span>
-									<h5>Wycliffe Associates, Inc.</h5>
-									<p>We worked to develop a freely-licensed recording Android application for the purpose of improving oral translation.</p>-->
+									<h4>beep boop</h4>
+									<div id="beepboop">
 								</section>
 								<section>
-									<!--<span class="icon major fa-lock"></span>
-									<h5>Beckman Coulter, Inc.</h5>
-									<p>	We worked to migrate an existing intranet into a Wordpress instance and integrate additional features.</p>-->
+									<h4>only meanies</h4>
+									<div id="onlymeanies">
 								</section>
 								<section>
-									<!--<span class="icon major fa-cog"></span>
-									<h5>The Boeing Company</h5>
-									<p>I worked to configure and troubleshoot programs in a Linux environment, documenting the proper workflow.</p>-->
+									<h4>love</h4>
+									<div id="love">
 								</section>
 								<section>
-									<h5></h5>
-									<p></p>
-								</section>
-							</div>
-							<h4>Personal Projects</h4>
-							<div class="features">
-								<section>
-									<!--<span class="icon major fa-code"></span>
-									<h5>redditbotting</h5>
-									<p> •	analyzerUser returns a user's common word usage in their history by analyzing n-grams.
-										<br>
-										•	lonelytalking interacts with users in his subreddit domain as an intelligent user-generated chatbot.
-									</p>-->
-								</section>
-								<section>
-									<!--<span class="icon major fa-cog"></span>
-									<h5>PRNG Analysis</h5>
-									<p> A statistical analysis on the native pseudo-random number generators within popular programming languages.
-										<br><br>
-										Deployed on UCSD's ACMS servers at <a href="https://acsweb.ucsd.edu/~smwoo/">https://acsweb.ucsd.edu/~smwoo</a>
-									</p>-->
-								</section>
-								<section>
-									<!--<span class="icon major fa-lock"></span>
-									<h5>Ephemeris</h5>
-									<p>Using NASA / JPL data to generate a visual model of an object’s time-space trajectory in a given heliocentric orbit.</p>-->
-								</section>
-								<section>
+									<h4>vroom vroom</h4>
+									<div id="vroomvroom">
 								</section>
 							</div>
 						</div>
 					</section>
 
-				<!-- One -->
+				<!-- Two -->
 					<section id="two" class="wrapper style3 spotlights">
 						<section>
-							<!--<a href="#" class="image"><img src="images/ksdt3.jpg" alt="" data-position="center center" /></a>-->
+							<h4>Bunny Hopping</h4>
 							<div class="content">
 								<div class="inner">
-									X here.
+									<div id = "bhop">
 								</div>
 							</div>
 							
 						</section>
 						<section>
+							<h4>Comedy</h4>
 							<div class="content">
 								<div class="inner">
-									Y here.
+									<div id = "comedy">
 								</div>
 							</div>
-							
 						</section>
-						<!--<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-
-							<i class = "footer animated fadeIn"><div id="player"></div></i>
+						<section>
+							<h4>Dance</h4>
 							<div class="content">
 								<div class="inner">
-									<h2>I've made a playlist for you.</h2>
-									<p>
-									</p>
+									<div id = "dance">
 								</div>
 							</div>
-						</section>-->
+						</section>
 					</section>
 
 				<!-- Three -->

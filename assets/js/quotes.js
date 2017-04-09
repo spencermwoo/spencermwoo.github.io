@@ -22,7 +22,7 @@ function RandomizeQuotes() {
 	"Nothing is more human than to wish for renewal when springtime comes.",
 	/*"Look not where you have fallen but where you slipped.",*/
 	"What were we doing when we unchained this earth from the sun?",
-	"The Earth was small, light blue, and so touchingly alone...".
+	"The Earth was small, light blue, and so touchingly alone...",
 
 	/*"We were always suckers for ridiculous hats.",
 	"I object to being called a chess genius because I consider myself to be an all around genius who happens to play chess.",
