@@ -3,7 +3,14 @@ $(function(){
 });
 
 function RandomizeQuotes() {
-	var quotes = [
+	var max = (quotes.length - 1);
+	var min = 0;
+	var n = Math.floor(Math.random() * (max - min + 1)) + min;
+
+	$("#quote").text("\"" + quotes[n] + "\"");
+}
+
+var quotes = [
 	"Computers are useless.  They can only give you answers.",
 	/*"If you don't trust people, you make them untrustworthy.",
 
@@ -92,11 +99,4 @@ function RandomizeQuotes() {
 
 	"Rejoice, O young man, in your youth, and let your heart cheer you in the days of your youth. Walk in the ways of your heart and the sight of your eyes. But know that for all these things God will bring you into judgment."
 	*/
-	];
-
-	var max = (quotes.length - 1);
-	var min = 0;
-	var n = Math.floor(Math.random() * (max - min + 1)) + min;
-
-	$("#quote").text("\"" + quotes[n] + "\"");
-}
+];
