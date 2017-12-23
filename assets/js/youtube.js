@@ -2,14 +2,14 @@ var player;
 var isMusic = true;
 var name = "";
 var numMusic = 0;
-var numHobby = 5; //starting place, id
+var numHobby = 4; //starting place, id
 var TOTAL_MUSIC = numHobby - 1;
 
 var playlists = [
     "PL4otHF15gsL0WQR1zewP18b1EjzgIJM2w", //welcome
     "PL4otHF15gsL257xtn6iqZlRo55tMxgo4h", //1%
-    "PL4otHF15gsL0-8_yKPgyxGdK4pKxIJ5Dw", //milk
-    "PL4otHF15gsL3ufeRvYZZj6mhA1J6e5Yk-", //meanies
+    "PL4otHF15gsL3bOOITaMNbtRizasD88t1p", //milk
+    "PL4otHF15gsL3V5RjaNuJRQXX76rbdHlLW", //meanies
 
     "PL4otHF15gsL1w2BS08GszHXikZXGBoPSS", //bhop
     "PL4otHF15gsL3kcZl44uv35z-PyWTK0EYS", //cardistry
