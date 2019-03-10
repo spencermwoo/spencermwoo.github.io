@@ -72,6 +72,8 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+setTimeout(onYouTubeIframeAPIReady, 3000);
+
 function onYouTubeIframeAPIReady() {
     var num = numHobby;
     if (isMusic) {
