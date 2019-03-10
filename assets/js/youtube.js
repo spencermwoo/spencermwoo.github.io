@@ -6,9 +6,9 @@ var numHobby = 4; //starting place, id
 var TOTAL_MUSIC = numHobby - 1;
 
 var playlists = [
-    "PL2ch5sVMNaRaEh5lYvpZU2NqHPzhrDm5h", //welcome
+    "PL2ch5sVMNaRaWjkhksqSHtSXx20NIp-BH", //bx
     "PL2ch5sVMNaRbFhrjp3e-EAFzYZosyGiQb", //spacejam
-    "PL2ch5sVMNaRahapM_gWkCsZUVrAuqYR6y", //spooky
+    "PL2ch5sVMNaRaEh5lYvpZU2NqHPzhrDm5h", //welcome
     "PL4otHF15gsL3V5RjaNuJRQXX76rbdHlLW", //meanies
 
     "PL4otHF15gsL1w2BS08GszHXikZXGBoPSS", //bhop
@@ -19,9 +19,9 @@ var playlists = [
 //poprocks, covers
 
 var names = [
-    "welcome",
+    "bx",
     "spacejam",
-    "spooky",
+    "welcome",
     "meanies",
 
     "bhop",
