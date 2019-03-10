@@ -12,11 +12,11 @@ function RandomizeQuotes() {
 
 var quotes = [
 	"Computers are useless.  They can only give you answers.",
-	/*"If you don't trust people, you make them untrustworthy.",
-
 	"Confidence is contagious.  So is lack of confidence.",
+	"If you don't trust people, you make them untrustworthy.",
+	
 
-	"If I had asked people what they wanted, they would have said faster horses.",*/
+	//"If I had asked people what they wanted, they would have said faster horses.",
 	"I think I think; therefore I think I am.",
 	"Even if you have nothing to write, write and say so.",
 	"I have made this longer than usual because I have not had the time to make it shorter.", 
@@ -31,17 +31,14 @@ var quotes = [
 	"What were we doing when we unchained this earth from the sun?",
 	"The Earth was small, light blue, and so touchingly alone...",
 
-	/*"We were always suckers for ridiculous hats.",
-	"I object to being called a chess genius because I consider myself to be an all around genius who happens to play chess.",
-	"And Richard Cory, one calm summer night . . .",*/
+	"We were always suckers for ridiculous hats.",
+	//"I object to being called a chess genius because I consider myself to be an all around genius who happens to play chess.",
+	//"And Richard Cory, one calm summer night . . .",
 	"And the tree was happy.",
 	//"Everything dies, baby that's a fact."
 	//"I've got debts no honest man can pay."
 
-	//"Jesus Christ, that's a pretty face."
-
 	//"You have to be odd to be number one."
-	//"I want to die on Mars, just not on impact."
 	//"This looks like a good place to relapse."
 	//"Capacity is not value."
 
@@ -62,7 +59,7 @@ var quotes = [
 	"Caitlyn Jenner looks a lot like Bruce Jenner.",
 	"I don't mean to sound extreme but death penalty.",*/
 
-	"It is the glory of God to conceal things, but the glory of kings is to search things out."
+	"It is the glory of God to conceal things, but the glory of kings is to search things out.",
 	
 	/*"If I were still trying to please man, I would not be a servant of Christ.",
 
@@ -73,9 +70,6 @@ var quotes = [
 	
 	"When you spread out your hands in prayer, I hide my eyes from you; even when you offer many prayers, I am not listening.",
 	"I ask then, has God rejected his people?  By no means!"
-	"Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you."
-	"But sexual immorality and all impurity or covetousness must not even be named among you, as is proper among saints."
-	"Have you not known?  Have you not heard?  The LORD is the everlasting God, creator of the ends of the Earth."
 	"The fear of the LORD is the beginning of knowledge."
 	"For this light momentary afflication is preparing for us an eternal weight of glory beyond all comparison."
 
@@ -85,7 +79,6 @@ var quotes = [
 	"For I desire steadfast love and not sacrifice, the knowledge of God rather than burnt offerings."
 	"Again I tell you, it is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God."
 	"But woe to you, scribes and Pharisees, hypocrites!"
-
 
 
 	"For the mind that is set on the flesh is hostile to God, for it does not submit to God's law; indeed, it cannot. Those who are in the flesh cannot please God."
@@ -99,4 +92,47 @@ var quotes = [
 
 	"Rejoice, O young man, in your youth, and let your heart cheer you in the days of your youth. Walk in the ways of your heart and the sight of your eyes. But know that for all these things God will bring you into judgment."
 	*/
+
+	// "It is not the man who has too little, but the man who craves more, that is poor",
+	"How bad is a good person allowed to be?",
+	"The relation between the controller and the controlled is reciprocal.",
+	"Actors love acting, painters love painting, and writers love having written.",
+
+	"As I grew up I opened my eyes and saw the real world, I began to laugh and I haven’t stopped since.",
+
+	"The pursuit of truth is not the pursuit of truth.  Therefore we must pursue the truth.",
+	"Philosophy calls for plain living, but not for penance.",
+	// "You can't keep blaming yourself.  Just blame yourself once and move on.",
+	
+	"We have Palaeolithic emotions; medieval institutions; and godlike technology.",
+
+	// "Christianity is Plato for the masses.",
+
+	"Every virtue lies between two vices.",
+
+	// "A story is not fact: it may not be true.",
+	// "A fact is not data: it may not be representative.",
+	// "Data is not evidence: it may not be uniquely supportive.",
+
+	// "A flickering lamp, a phantom, and a dream.",
+
+	// "I supposed one could say women stuff themselves with far more pleasures than men.",
+
+	"De Omnibus Dubitandum Est",
+
+	"Beware false paths.  Seek and you will be found.  Liber Primus is the way.",
+	"Most of us are relieved to find out we have a disease instead of a moral deficiency.",
+
+	// "To save for the future is to deny the present.",
+
+	// "We ordered food and talked about the weather for forty minutes.",
+
+	// "Theta decay is real."
+
+
+	// "Downloading more RAM..."
+
+	"I wish things were different.  They are not."
+	
+
 ];
