@@ -118,6 +118,17 @@ var quotes = [
 
 	// "I supposed one could say women stuff themselves with far more pleasures than men.",
 
+	"I have sometimes thought that I have been burdened with a pack of ten misfortunes, any one of which if borne by my neighbor would be enough to make a murderer out of him.",
+
+	"I smiled in my weakness.",
+
+	"My unhappiness stemmed entirely from my own vices",
+
+	// "Human beings never submit to human beings.",
+	"The devil is in the details."
+
+	"When a measure becomes a target, it ceases to be a good measure.",
+
 	"De Omnibus Dubitandum Est",
 
 	"Beware false paths.  Seek and you will be found.  Liber Primus is the way.",
