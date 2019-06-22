@@ -125,7 +125,7 @@ var quotes = [
 	"My unhappiness stemmed entirely from my own vices",
 
 	// "Human beings never submit to human beings.",
-	"The devil is in the details."
+	"The devil is in the details.",
 
 	"When a measure becomes a target, it ceases to be a good measure.",
 
