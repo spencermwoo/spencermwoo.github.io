@@ -35,6 +35,9 @@ var quotes = [
 	//"I object to being called a chess genius because I consider myself to be an all around genius who happens to play chess.",
 	//"And Richard Cory, one calm summer night . . .",
 	"And the tree was happy.",
+	"For a successful technology, reality must take precedence over public relations, for nature cannot be fooled.",
+
+	"I'd hate to die twice. It's so boring.",
 	//"Everything dies, baby that's a fact."
 	//"I've got debts no honest man can pay."
 
