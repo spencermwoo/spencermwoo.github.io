@@ -1,0 +1,10 @@
+{
+	"name" : "spencermwoo",
+    "short_name" : "spencermwoo",
+    "description" : "spencermwoo.github.io",
+    "start_url" : "spencermwoo.github.io",
+    "icons" : [],
+    "display" : "fullscreen",
+    "orientation" : "any",
+    "lang" : "English"
+}

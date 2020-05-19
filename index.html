@@ -9,11 +9,30 @@
 		<title>Spencer Woo</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel='manifest' href='manifest.webmanifest'>
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/animate.css" />
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			// Check compatibility for the browser we're running this in
+			if ("serviceWorker" in navigator) {
+			  if (navigator.serviceWorker.controller) {
+			    console.log("[PWA Builder] active service worker found, no need to register");
+			  } else {
+			    // Register the service worker
+			    navigator.serviceWorker
+			      .register("assets/js/sw-pwabuilder.js", {
+			        scope: "./"
+			      })
+			      .then(function (reg) {
+			        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+			      });
+			  }
+			}
+
+		</script>
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/quotes.js"></script>
 		<!--<script src="assets/js/support.js"></script>-->
@@ -55,7 +74,7 @@
 								<br>
 								In my spare time I enjoy hiking, listening to music, and programming.  I've also recently taken up reading books.  I majored in Computer Science and recently graduated from the University of California, San Diego.
 								<br><br>
-								I also have a nonsensical <a href="spencers.dev">blog</a> but these days that goes without saying.
+								I also have a nonsensical <a href="https://spencers.dev">blog</a> but these days that goes without saying.
 								
 						</div>
 
